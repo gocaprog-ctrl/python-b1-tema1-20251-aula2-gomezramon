@@ -33,6 +33,10 @@ Exemple:
 
 def invert_text(text_chain:str):
     # Write here your code
+    resultado = ""
+    for letra in text_chain:
+        resultado = letra + resultado
+    return resultado
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
