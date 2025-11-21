@@ -43,6 +43,20 @@ Exemple:
 
 def sum_odd_numbers(list_numbers):
     # Write here your code
+        
+    result = 0
+
+    for numero in list_numbers:
+        if numero  <= 0:
+            raise ValueError("No introduzca valores negativos, ni 0")
+        if not isinstance(numero, int):
+            raise ValueError("Decimales no validos")
+        if numero % 2 == 0:
+            continue
+        result += numero
+    return result
+
+print(sum_odd_numbers([1, 2, 3, 4, 5, 10, 21, 100]))
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
