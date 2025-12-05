@@ -46,7 +46,10 @@ Exemple:
 
 
 def mult_recursive(value, times):
-    # Write here your code
+    if times <= 0:
+        return 0
+    else:
+        return value + mult_recursive(value, times - 1)
     pass
 
 
