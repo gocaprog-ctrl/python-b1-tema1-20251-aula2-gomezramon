@@ -64,8 +64,14 @@ Exemple:
 
 import numpy as np
 
+list_numbers = [1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42]
+
 def results(list_numbers):
-    # Write here your code
+    average = np.average(list_numbers)
+    std_dev = np.std(list_numbers)
+    return average, std_dev
+
+print(f"Average: {results(list_numbers)[0]:.2f}\nStandard Deviation: {results(list_numbers)[1]:.2f}")
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
